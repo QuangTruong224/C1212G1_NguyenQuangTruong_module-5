@@ -21,3 +21,4 @@ for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
         sum += number;
     }
 }
+console.log("Tổng các số nguyên tố trong mảng trên là: " + sum);

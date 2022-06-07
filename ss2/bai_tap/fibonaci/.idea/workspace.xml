@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="11aa67a8-b40d-4c12-bb3b-481b4385636b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fibonaci.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" afterDir="false" />
@@ -40,9 +45,17 @@
       <change beforePath="$PROJECT_DIR$/../../../case study/service-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/service-edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../case study/servivce-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/servivce-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../layout boottrap/startbootstrap-agency-gh-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../layout boottrap/startbootstrap-agency-gh-pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fibonacci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fibonacci/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fibonacci/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/.idea/fibonacci.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/dist/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/dist/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.js" afterDir="false" />
@@ -63,6 +76,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -76,10 +96,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\CodeGym\module5\ss2\bai_tap\fibonaci\node_modules\prettier" />
     <property name="ts.external.directory.path" value="D:\CodeGym\module5\ss2\bai_tap\fibonaci\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
@@ -92,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654616870710</updated>
-      <workItem from="1654616872335" duration="524000" />
+      <workItem from="1654616872335" duration="1642000" />
+      <workItem from="1654618573073" duration="991000" />
     </task>
     <servers />
   </component>
@@ -109,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e120e7b-4463-4ed1-86e9-f303c37faed2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/.idea/Kiểm tra số nguyên tố.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kiểm tra số nguyên tố/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Promise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/.idea/Xây dựng các đối tượng hình học.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/IArea.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/IArea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/IArea.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/main.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/rectangle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/rectangle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/rectangle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/shape.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/shape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/dist/shape.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/src/IArea.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/src/rectangle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/src/shape.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xây dựng các đối tượng hình học/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Khai báo và sử dụng biến/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Khai báo và sử dụng biến/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="package.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2ABURbqzHWNf9T3tSDvdRoBXpNn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\CodeGym\module5\ss2\thuc_hanh\Promise\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e120e7b-4463-4ed1-86e9-f303c37faed2" name="Default Changelist" comment="" />
+      <created>1654482464438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654482464438</updated>
+      <workItem from="1654482465685" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1654482631515">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654482631515" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1654482633694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654482633694" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1654482633694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654482633694" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1654482633694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654482633694" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1654482633694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654482633694" />
+  </component>
+</project>

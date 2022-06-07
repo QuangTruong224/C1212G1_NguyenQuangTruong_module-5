@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11aa67a8-b40d-4c12-bb3b-481b4385636b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/contract-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/contract-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/contract-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/contract-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/contractt-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/contractt-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/customer-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/customer-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/customer-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/customer-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/customer-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/customer-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/service-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/service-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/service-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/service-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case study/servivce-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/servivce-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../layout boottrap/startbootstrap-agency-gh-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../layout boottrap/startbootstrap-agency-gh-pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fibonacci/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../fibonacci/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Kiểm tra số nguyên tố/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Promise/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Promise/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Promise/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Promise/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Promise/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Promise/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/IArea.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/IArea.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/rectangle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/rectangle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/shape.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/src/shape.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/Xây dựng các đối tượng hình học/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2AFss5ZXG51vNMa1UgkIRGLpyua" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\CodeGym\module5\ss2\bai_tap\fibonaci\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11aa67a8-b40d-4c12-bb3b-481b4385636b" name="Default Changelist" comment="" />
+      <created>1654616870710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654616870710</updated>
+      <workItem from="1654616872335" duration="524000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

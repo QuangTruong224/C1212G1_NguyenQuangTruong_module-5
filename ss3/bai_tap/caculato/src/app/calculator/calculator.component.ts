@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CalculatorComponent implements OnInit {
   first = 0;
   second = 0;
-  operator = '-';
+  operator = '';
   result = '';
 
   addition() {

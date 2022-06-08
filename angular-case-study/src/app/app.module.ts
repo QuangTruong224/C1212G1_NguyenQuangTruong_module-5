@@ -3,16 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CaseStudyComponent } from './case-study/case-study.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerCreateComponent } from './customer-create/customer-create.component';
+import { ServiceListComponent } from './service-list/service-list.component';
+import { ServiceCreateComponent } from './service-create/service-create.component';
+import { ContractListComponent } from './contract-list/contract-list.component';
+import { CustomerEditComponent } from './customer-edit/customer-edit.component';
+import { ServiceEditComponent } from './service-edit/service-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CaseStudyComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CustomerListComponent,
+    CustomerCreateComponent,
+    ServiceListComponent,
+    ServiceCreateComponent,
+    ContractListComponent,
+    CustomerEditComponent,
+    ServiceEditComponent
   ],
   imports: [
     BrowserModule,

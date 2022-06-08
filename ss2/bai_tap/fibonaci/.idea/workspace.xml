@@ -20,42 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11aa67a8-b40d-4c12-bb3b-481b4385636b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.idea/font-size.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/font-size/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case study/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +77,7 @@
       <workItem from="1654616872335" duration="1642000" />
       <workItem from="1654618573073" duration="991000" />
       <workItem from="1654619973925" duration="1968000" />
+      <workItem from="1654652526041" duration="1716000" />
     </task>
     <servers />
   </component>

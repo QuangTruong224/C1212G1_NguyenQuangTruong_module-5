@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-color-picker',
@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./color-picker.component.css']
 })
 export class ColorPickerComponent implements OnInit {
-color: string;
-  constructor() { }
+  color: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-getColor(value) {
+
+  getColor(value) {
     this.color = value;
-}
+  }
 }

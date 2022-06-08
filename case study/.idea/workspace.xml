@@ -20,51 +20,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="244f3d61-3c77-41c6-9758-8b1c26f409ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.idea/font-size.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/app/font-size-editor/font-size-editor.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3/thuc_hanh/font-size/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/contract-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/contract-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contractt-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/contractt-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servivce-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/servivce-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../layout boottrap/startbootstrap-agency-gh-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../layout boottrap/startbootstrap-agency-gh-pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/.idea/fibonacci.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/dist/main.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/dist/main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonacci/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/bai_tap/fibonaci/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Khai báo và sử dụng biến/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Kiểm tra số nguyên tố/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Promise/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/IArea.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/IArea.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/rectangle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/rectangle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/shape.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/src/shape.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss2/thuc_hanh/Xây dựng các đối tượng hình học/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +116,8 @@
       <workItem from="1654480185840" duration="1366000" />
       <workItem from="1654515761616" duration="938000" />
       <workItem from="1654565344463" duration="17530000" />
-      <workItem from="1654616341921" duration="793000" />
+      <workItem from="1654616341921" duration="1992000" />
+      <workItem from="1654652489042" duration="27000" />
     </task>
     <servers />
   </component>

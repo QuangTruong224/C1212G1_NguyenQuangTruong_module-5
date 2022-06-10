@@ -7,11 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
-import { ServiceListComponent } from './service-list/service-list.component';
-import { ServiceCreateComponent } from './service-create/service-create.component';
+import { ServiceListComponent } from './facility-list/service-list.component';
+import { ServiceCreateComponent } from './facility-create/service-create.component';
 import { ContractListComponent } from './contract-list/contract-list.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
-import { ServiceEditComponent } from './service-edit/service-edit.component';
+import { ServiceEditComponent } from './facility-edit/service-edit.component';
 import { HomeComponent } from './home/home.component';
 import { ContractCreateComponent } from './contract-create/contract-create.component';
 

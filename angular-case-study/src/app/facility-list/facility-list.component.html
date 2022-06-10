@@ -1,0 +1,175 @@
+<section class="page-section bg-light" id="portfolio" >
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase" style="background:lightgoldenrodyellow">CÁC LOẠI PHÒNG</h2>
+    </div>
+
+    <div class="row"  *ngFor="let facility of facilities">
+      <div class="col-lg-4 col-sm-6 mb-4" >
+        <!-- Portfolio item 1-->
+        <div class="portfolio-item">
+          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 221px"
+                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722773/722773/160407105.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"
+                 width="700px" height="670px"/>
+          </a>
+
+          <div class="portfolio-caption" >
+            <div class="portfolio-caption-heading">{{facility.facilityName}}</div>
+            <div class="justify-content-between d-flex">
+            <div class="portfolio-caption-subheading text-muted">Diện tích : {{facility.area}}<sup>2</sup></div>
+            <div class="portfolio-caption-subheading text-muted" style="font-weight: bolder" >Giá : {{facility.cost}}</div>
+            </div>
+              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"
+                      data-toggle="modal">Delete</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-sm-6 mb-4" >
+        <!-- Portfolio item 2-->
+        <div class="portfolio-item">
+          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 221px"
+                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/724017/724017/Bedroom.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"
+                 width="700px" height="700px"/>
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">{{facility.facilityName}}</div>
+            <div class="justify-content-between d-flex">
+            <div class="portfolio-caption-subheading text-muted">Diện tích : {{facility.area}} <sup>2</sup></div>
+              <div class="portfolio-caption-subheading text-muted"  style="font-weight: bolder">Giá : {{facility.cost}}</div>
+            </div>
+              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"
+                      data-toggle="modal">Delete</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4" >
+        <!-- Portfolio item 3-->
+        <div class="portfolio-item">
+          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 221px"
+                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722779/722779/63984540_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"
+                 width="700px" height="700px"/>
+          </a>
+          <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">{{facility.facilityName}}</div>
+            <div class="justify-content-between d-flex">
+            <div class="portfolio-caption-subheading text-muted">Diện tích : {{facility.area}} <sup>2</sup></div>
+              <div class="portfolio-caption-subheading text-muted" style="font-weight: bolder" >Giá : {{facility.cost}}</div>
+            </div>
+              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"
+                      data-toggle="modal">Delete</button>
+          </div>
+        </div>
+      </div>
+
+<!--      <div class="col-lg-4 col-sm-6 mb-4">-->
+<!--        &lt;!&ndash; Portfolio item 4&ndash;&gt;-->
+<!--        <div class="portfolio-item">-->
+<!--          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">-->
+<!--            <div class="portfolio-hover">-->
+<!--              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" style="height: 221px"-->
+<!--                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/723983/723983/FV_Bedroom3_Three_Bedroom_Villa.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"-->
+<!--                 width="700px" height="700px"/>-->
+<!--          </a>-->
+<!--          <div class="portfolio-caption">-->
+<!--            <div class="portfolio-caption-heading">Phòng gác mái</div>-->
+<!--            <div class="justify-content-between d-flex">-->
+<!--            <div class="portfolio-caption-subheading text-muted">Diện tích : 52m <sup>2</sup></div>-->
+<!--              <div class="portfolio-caption-subheading text-muted" style="font-weight: bolder" >Giá : 600 $</div>-->
+
+<!--            </div>-->
+<!--              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"-->
+<!--                      data-toggle="modal">Delete</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4 col-sm-6 mb-4">-->
+<!--        &lt;!&ndash; Portfolio item 5&ndash;&gt;-->
+<!--        <div class="portfolio-item">-->
+<!--          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">-->
+<!--            <div class="portfolio-hover">-->
+<!--              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" style="height: 221px"-->
+<!--                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/724017/724017/Bedroom.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"-->
+<!--                 width="700px" height="700px"/>-->
+<!--          </a>-->
+<!--          <div class="portfolio-caption">-->
+<!--            <div class="portfolio-caption-heading">Phòng Superior</div>-->
+<!--            <div class="justify-content-between d-flex">-->
+<!--              <div class="portfolio-caption-subheading text-muted">Diện tích : 52m <sup>2</sup></div>-->
+<!--              <div class="portfolio-caption-subheading text-muted"  style="font-weight: bolder">Giá : 695 $</div>-->
+<!--            </div>-->
+<!--              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"-->
+<!--                      data-toggle="modal">Delete</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4 col-sm-6 mb-4">-->
+<!--        &lt;!&ndash; Portfolio item 6&ndash;&gt;-->
+<!--        <div class="portfolio-item">-->
+<!--          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">-->
+<!--            <div class="portfolio-hover">-->
+<!--              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" style="height: 221px"-->
+<!--                 src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722800/722800/128145956.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"-->
+<!--                 width="700px" height="700px"/>-->
+<!--          </a>-->
+<!--          <div class="portfolio-caption">-->
+<!--            <div class="portfolio-caption-heading">Phòng family</div>-->
+<!--            <div class="justify-content-between d-flex">-->
+<!--            <div class="portfolio-caption-subheading text-muted">Diện tích : 64m <sup>2</sup></div>-->
+<!--              <div class="portfolio-caption-subheading text-muted"  style="font-weight: bolder">Giá : 1200 $</div>-->
+<!--            </div>-->
+<!--              <button type="button" class="btn btn-primary btn-lg" data-target="#deleteModal"-->
+<!--                      data-toggle="modal">Delete</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+</section>
+<hr>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete room</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Do you really want to delete room ?
+          <span class="text-danger font-weight-bold" id="nameDelete"></span>
+        </p>
+      </div>
+      <div class="modal-footer">
+
+          <input type="hidden" name="id" id="idDelete">
+          <button type="button" class="btn btn-secondary mx-1" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-danger mx-1 ">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

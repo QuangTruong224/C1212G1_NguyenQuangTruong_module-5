@@ -5,11 +5,12 @@ import {CustomerCreateComponent} from './customer-create/customer-create.compone
 import {CommonModule} from '@angular/common';
 import {HomeComponent} from './home/home.component';
 import {CustomerEditComponent} from './customer-edit/customer-edit.component';
-import {ServiceListComponent} from './facility-list/service-list.component';
-import {ServiceCreateComponent} from './facility-create/service-create.component';
-import {ServiceEditComponent} from './facility-edit/service-edit.component';
+import {FacilityListComponent} from './facility-list/facility-list.component';
+import {FacilityCreateComponent} from './facility-create/facility-create.component';
+import {FacilityEditComponent} from './facility-edit/facility-edit.component';
 import {ContractListComponent} from './contract-list/contract-list.component';
 import {ContractCreateComponent} from './contract-create/contract-create.component';
+import {ContractEditComponent} from './contract-edit/contract-edit.component';
 
 
 const routes: Routes = [
@@ -18,11 +19,12 @@ const routes: Routes = [
     {path: 'customer-list', component: CustomerListComponent},
   {path: 'customer-create', component: CustomerCreateComponent},
   {path: 'customer-edit', component: CustomerEditComponent},
-  {path: 'facility-list', component: ServiceListComponent},
-  {path: 'facility-create', component: ServiceCreateComponent},
-  {path: 'facility-edit', component: ServiceEditComponent},
+  {path: 'facility-list', component: FacilityListComponent},
+  {path: 'facility-create', component: FacilityCreateComponent},
+  {path: 'facility-edit', component: FacilityEditComponent},
   {path: 'contract-list', component: ContractListComponent},
   {path: 'contract-create', component: ContractCreateComponent},
+  {path: 'contract-edit', component: ContractEditComponent}
 
 ];
 

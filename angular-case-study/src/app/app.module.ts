@@ -7,13 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
-import { ServiceListComponent } from './facility-list/service-list.component';
-import { ServiceCreateComponent } from './facility-create/service-create.component';
+import { FacilityListComponent } from './facility-list/facility-list.component';
+import { FacilityCreateComponent } from './facility-create/facility-create.component';
 import { ContractListComponent } from './contract-list/contract-list.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
-import { ServiceEditComponent } from './facility-edit/service-edit.component';
+import { FacilityEditComponent } from './facility-edit/facility-edit.component';
 import { HomeComponent } from './home/home.component';
 import { ContractCreateComponent } from './contract-create/contract-create.component';
+import { ContractEditComponent } from './contract-edit/contract-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,14 @@ import { ContractCreateComponent } from './contract-create/contract-create.compo
     FooterComponent,
     CustomerListComponent,
     CustomerCreateComponent,
-    ServiceListComponent,
-    ServiceCreateComponent,
+    FacilityListComponent,
+    FacilityCreateComponent,
     ContractListComponent,
     CustomerEditComponent,
-    ServiceEditComponent,
+    FacilityEditComponent,
     HomeComponent,
-    ContractCreateComponent
+    ContractCreateComponent,
+    ContractEditComponent
   ],
   imports: [
     BrowserModule,

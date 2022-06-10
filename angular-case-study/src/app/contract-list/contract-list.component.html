@@ -24,26 +24,43 @@
     <table class="table table-borderless table-striped">
       <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">Contract Code</th>
+        <th scope="col">Customer Name</th>
         <th scope="col">Service</th>
-        <th scope="col">Customer</th>
-        <th scope="col">Start date</th>
-        <th scope="col">End date</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
         <th scope="col">Deposit</th>
-        <th scope="col">Total</th>
-        <th scope="col" class="col-3">Attach</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Detail</th>
+        <th scope="col">Update</th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1</td>
-        <td>Villa River Side</td>
-        <td>Nguyễn Quang Trường</td>
-        <td>01-01-2022</td>
-        <td>12-31-2022</td>
-        <td>500.000</td>
-        <td>5.000.000</td>
-        <td>Buffet, karaoke,thuê xe đạp</td>
+      <tr *ngFor="let contract of contracts">
+        <td>{{contract.contractId}}</td>
+        <td>{{contract.customerName}}</td>
+        <td>{{contract.serviceName}}</td>
+        <td>{{contract.startDay|date:'dd/MM/yyyy'}}</td>
+        <td>{{contract.endDay|date:'dd/MM/yyyy'}}</td>
+        <td>{{contract.deposit|currency:'VND'}}</td>
+
+        <td>
+          <button class="btn btn-danger" data-target="#deleteModal"
+                  data-toggle="modal">
+            Delete
+          </button>
+        </td>
+        <td>
+          <a>
+            <button class="btn btn-primary">Detail</button>
+          </a>
+        </td>
+        <td>
+          <a [routerLink]="['/contract-edit']">
+            <button  class="btn btn-info">Update</button>
+          </a>
+        </td>
+
       </tr>
       </tbody>
     </table>
@@ -75,3 +92,27 @@
   </nav>
   <!--        paging-->
 </section>
+<hr>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete contract</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Do you really want to delete contract
+          <span class="text-danger font-weight-bold" id="nameDelete"></span>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="id" id="idDelete">
+        <button type="button" class="btn btn-secondary mx-1" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-danger mx-1 ">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="home.html"><img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" alt="..." /></a>
+    <a class="navbar-brand" [routerLink]="['/home']"><img src="https://www.furama.com/images/LOGOFurama_4C_Normal.png" alt="..." /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars ms-1"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" href="servivce-list.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" href="customer-list.html">Customer</a></li>
-        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" href="contract-list.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" [routerLink]="['/service-list']">Services</a></li>
+        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" [routerLink]="['/customer-list']">Customer</a></li>
+        <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" [routerLink]="['/contract-list']">Contact</a></li>
         <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" href="#team">Team</a></li>
         <li class="nav-item"><a class="nav-link" style="color:#191c1f;font-size: 20px" href="#contact">About</a></li>
       </ul>

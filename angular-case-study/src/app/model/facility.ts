@@ -9,4 +9,5 @@ export interface Facility {
   other?: string;
   poolArea?: string;
   floor?: string;
+  url?: string;
 }

@@ -22,8 +22,8 @@ export class CustomerListComponent implements OnInit {
       gender: 'Nữ', dateOfBirth: '1992-08-08', identify: '865342123', address: 'K77/22 Thái Phiên, Quảng Trị', phone: '0954333333',
       email: 'xuandieu92@gmail.com', type: 'Diamond'});
 
-    this.customers.push({customerId: 'KH-004', customerName: 'Trương Đình Nghệ',
-      gender: 'Nam', dateOfBirth: '1990-02-27', identify: '488645199', address: 'nghenhan2702@gmail.com', phone: '0373213122',
+    this.customers.push({customerId: 'KH-004', customerName: 'Phan Đàm Thị Mỹ Hậu',
+      gender: 'Nam', dateOfBirth: '1990-02-27', identify: '488645199', address: '85 Trần Xuân Soạn ', phone: '0373213122',
       email: 'nghenhan2702@gmail.com', type: 'Member'});
 
     this.customers.push({customerId: 'KH-005', customerName: 'Nguyễn Tâm Đắc',

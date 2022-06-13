@@ -21,7 +21,7 @@
 
 <!--            Password và repeat-->
             <div class="form-group">
-              <span class="form-label">Password</span>
+              <span class="form-label">Mật khẩu</span>
               <input formControlName="password" class="form-control" type="password" placeholder="Enter password">
               <p style="color: red"
                  *ngIf="registerForm.controls.password.hasError('required') && registerForm.controls.password.touched">
@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-group">
-              <span class="form-label">Confirm password</span>
+              <span class="form-label">Nhập lại mật khẩu</span>
               <input formControlName="confirmPassword" class="form-control" type="password" placeholder="Enter password">
               <p style="color: red"
                  *ngIf="registerForm.controls.confirmPassword.hasError('required') && registerForm.controls.confirmPassword.touched">
@@ -45,7 +45,7 @@
             </div>
             <p *ngIf="registerForm.hasError('confirmPassword') && registerForm.touched" style="color: red"> Sai mật khẩu </p>
             <div class="form-group">
-              <span class="form-label">Country</span>
+              <span class="form-label">Thành phố</span>
               <select formControlName="country" class="form-control">
                 <option>Đà Nẵng</option>
                 <option>Hà Nội</option>
@@ -58,7 +58,7 @@
               <span class="select-arrow"></span>
             </div>
             <div class="form-group">
-              <span class="form-label">Age</span>
+              <span class="form-label">Tuổi</span>
               <input formControlName="age" class="form-control" type="number" placeholder="Enter Age">
               <p style="color: red"
                  *ngIf="registerForm.controls.age.hasError('required') && registerForm.controls.age.touched">
@@ -71,7 +71,7 @@
 
 
             <div class="form-group">
-              <span class="form-label">Phone</span>
+              <span class="form-label">Số điện thoại</span>
               <input formControlName="phone" class="form-control" type="text" placeholder="Enter phone">
               <p style="color: red"
                  *ngIf="registerForm.controls.phone.hasError('required') && registerForm.controls.phone.touched">
@@ -82,25 +82,21 @@
                 Đúng định dạng số điện thoại</p>
             </div>
 
-            <div formControlName="gender" class="form-group">
-              <span class="form-label">Gender</span>
+            <div  class="form-group">
+              <span class="form-label">Giới tính</span>
               <div class="form-check form-check-inline">
-                <input  type="checkbox" value="option1">
-                <label>Male</label>
+                <input formControlName="gender" type="checkbox" value="option1">
+                <label>Nam</label>
               </div>
               <div class="form-check form-check-inline">
-                <input  formControlName="phone" type="checkbox" value="option2">
-                <label>Female</label>
+                <input  formControlName="gender" type="checkbox" value="option2">
+                <label>NỮ</label>
               </div>
-               <p style="color: red"
-                  *ngIf="registerForm.controls.gender.hasError('required') && registerForm.controls.gender.touched">
-              Không được
-              để trống</p>
             </div>
 
 
             <div class="form-btn">
-              <button class="submit-btn">Submit</button>
+              <button class="submit-btn">Xác nhận</button>
             </div>
           </form>
         </div>

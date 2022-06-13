@@ -19,7 +19,7 @@
       Không được
       để trống</p>
     <p style="color: red"
-       *ngIf="loginForm.controls.password.hasError('min') && loginForm.controls.password.touched">
+       *ngIf="loginForm.controls.password.hasError('minLength') && loginForm.controls.password.touched">
       Độ dài phải là 6</p>
   </div>
 

@@ -31,14 +31,6 @@ export class RegisterComponent implements OnInit {
   customPassword(confirm: AbstractControl) {
     const password = confirm.get('password').value;
     const confirmPassword = confirm.get('confirmPassword').value;
-    if (confirmPassword !== password) {
-      return {
-        confirmPassword: true
-      };
-    } else {
-      return null;
-    }
+    return confirmPassword !== password ? confirmPassword : null;
   }
-
-
 }

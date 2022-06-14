@@ -1,0 +1,98 @@
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="booking-form">
+          <form [formGroup]="contractForm" (ngSubmit)="createContract()">
+
+            <div class="form-group">
+              <span class="form-label">Code contract</span>
+              <input formControlName="contractId" class="form-control" type="text" placeholder="Enter code">
+              <p style="color: red"
+                 *ngIf="contractForm.controls.contractId.hasError('required') && contractForm.controls.contractId.touched">
+                Không được
+                để trống</p>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Customer Name</span>
+              <select formControlName="customerName" class="form-control">
+                <option value="1">Nguyen Văn A</option>
+                <option value="2">Le Văn B</option>
+              </select>
+              <p style="color: red"
+                 *ngIf="contractForm.controls.customerName.hasError('required') && contractForm.controls.customerName.touched">
+                Không được
+                để trống</p>
+              <span class="select-arrow"></span>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Service</span>
+              <select formControlName="serviceName" class="form-control">
+                <option value="1">Ocean Suite</option>
+                <option value="2">Villa Ocean View</option>
+              </select>
+              <p style="color: red"
+                 *ngIf="contractForm.controls.serviceName.hasError('required') && contractForm.controls.serviceName.touched">
+                Không được
+                để trống</p>
+              <span class="select-arrow"></span>
+            </div>
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Start Day</span>
+                  <input formControlName="startDay" class="form-control" type="date" required>
+                  <p style="color: red"
+                     *ngIf="contractForm.controls.startDay.hasError('required') && contractForm.controls.startDay.touched">
+                    Không được
+                    để trống</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">End Day</span>
+                  <input formControlName="endDay" class="form-control" type="date" required>
+                  <p style="color: red"
+                     *ngIf="contractForm.controls.endDay.hasError('required') && contractForm.controls.endDay.touched">
+                    Không được
+                    để trống</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <span class="form-label">Deposit</span>
+              <input formControlName="deposit" class="form-control" type="number" placeholder="Enter Deposit">
+              <p style="color: red"
+                 *ngIf="contractForm.controls.deposit.hasError('required') && contractForm.controls.deposit.touched">
+                Không được
+                để trống</p>
+              <p style="color: red"
+                 *ngIf="contractForm.controls.deposit.hasError('pattern') && contractForm.controls.deposit.touched">
+                • Tiền đặt cọc phải lớn hơn 0</p>
+            </div>
+
+            <div class="form-group">
+              <span class="form-label">Total Money</span>
+              <input formControlName="total" class="form-control" type="number" placeholder="Enter Total Money">
+              <p style="color: red"
+                 *ngIf="contractForm.controls.total.hasError('required') && contractForm.controls.total.touched">
+                Không được
+                để trống</p>
+            </div>
+
+
+            <div class="form-btn">
+              <button class="submit-btn">Contract</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

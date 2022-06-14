@@ -7,5 +7,5 @@ export interface Customer {
   address: string;
   phone: string;
   email: string;
-  type: string;
+  customerType: string;
 }

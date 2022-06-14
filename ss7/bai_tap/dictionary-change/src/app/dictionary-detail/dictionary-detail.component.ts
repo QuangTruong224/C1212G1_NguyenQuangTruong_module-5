@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Dictionary} from '../model/dictionary';
-import {DictionaryServiceService} from '../service/dictionary-service.service';
 import {ActivatedRoute, ParamMap} from '@angular/router';
+import {DictionaryService} from '../service/dictionary.service';
 
 @Component({
   selector: 'app-dictionary-detail',
@@ -13,7 +13,7 @@ export class DictionaryDetailComponent implements OnInit {
   word: string;
   wordmean: Dictionary;
 
-  constructor(private dictionaryServiceService: DictionaryServiceService,
+  constructor(private dictionaryServiceService: DictionaryService,
               private activatedRoute: ActivatedRoute,
   ) {
   }

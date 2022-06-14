@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Dictionary} from '../model/dictionary';
-import {DictionaryServiceService} from '../service/dictionary-service.service';
+import {DictionaryService} from '../service/dictionary.service';
 
 @Component({
   selector: 'app-dictionary-list',
@@ -10,7 +10,7 @@ import {DictionaryServiceService} from '../service/dictionary-service.service';
 export class DictionaryListComponent implements OnInit {
   dictionaryList: Dictionary[];
 
-  constructor(private dictionaryServiceService: DictionaryServiceService) {
+  constructor(private dictionaryServiceService: DictionaryService) {
   }
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 export interface Contract {
   contractId: string;
-  customerName: string;
+  contractName: string;
   serviceName: string;
   startDay: string;
   endDay: string;

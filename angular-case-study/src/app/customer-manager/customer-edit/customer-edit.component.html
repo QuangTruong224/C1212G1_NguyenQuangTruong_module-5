@@ -1,0 +1,119 @@
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="booking-form">
+          <form [formGroup]="customerForm" (ngSubmit)="updateCustomer(customerId)">
+
+
+            <div class="form-group">
+              <span class="form-label">Name</span>
+              <input class="form-control" type="text" formControlName="customerName" placeholder="Enter your name">
+              <p style="color: red"
+                 *ngIf="customerForm.controls.customerName.hasError('required') && customerForm.controls.customerName.touched">
+                Không được
+                để trống</p>
+            </div>
+
+            <div class="form-group">
+              <span class="form-label">Code</span>
+              <input class="form-control" type="text" formControlName="customerId" placeholder="Enter code">
+              <p style="color: red"
+                 *ngIf="customerForm.controls.customerId.hasError('required') && customerForm.controls.customerId.touched">
+                Không được
+                để trống</p>
+              <p style="color: red"
+                 *ngIf="customerForm.controls.customerId.hasError('pattern') && customerForm.controls.customerId.touched">
+                Nhập đúng định dạng (KH-XXXX)</p>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Birthday</span>
+              <input class="form-control" formControlName="dateOfBirth" type="date" required>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Id card</span>
+              <input class="form-control" formControlName="identify" type="text" placeholder="Enter id card">
+              <p style="color: red"
+                 *ngIf="customerForm.controls.identify.hasError('required') && customerForm.controls.identify.touched">
+                Không được
+                để trống</p>
+              <p style="color: red"
+                 *ngIf="customerForm.controls.identify.hasError('pattern') && customerForm.controls.identify.touched">
+                Số chứng minh phải 9 số</p>
+            </div>
+
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Phone</span>
+                  <input class="form-control" formControlName="phone" type="text" placeholder="Enter phone">
+                  <p style="color: red"
+                     *ngIf="customerForm.controls.phone.hasError('required') && customerForm.controls.phone.touched">
+                    Không được
+                    để trống</p>
+                  <p style="color: red"
+                     *ngIf="customerForm.controls.phone.hasError('pattern') && customerForm.controls.phone.touched">
+                    Số điện thoại không đúng</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Email</span>
+                  <input class="form-control" formControlName="email" type="email" placeholder="Enter your email">
+                  <p style="color: red"
+                     *ngIf="customerForm.controls.email.hasError('required') && customerForm.controls.email.touched">
+                    Không được
+                    để trống</p>
+                  <p style="color: red"
+                     *ngIf="customerForm.controls.email.hasError('email') && customerForm.controls.email.touched">
+                    email không đúng</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Address</span>
+              <input class="form-control" formControlName="address" type="text" placeholder="Enter address">
+            </div>
+
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Gender</span>
+                  <select formControlName="gender" class="form-control">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Customer type</span>
+                  <select formControlName="customerType" class="form-control">
+                    <option value="Diamond">Diamond</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Member">Member</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-btn">
+              <button class="submit-btn">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

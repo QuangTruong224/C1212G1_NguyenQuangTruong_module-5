@@ -4,7 +4,7 @@ import {Dictionary} from '../model/dictionary';
 @Injectable({
   providedIn: 'root'
 })
-export class DictionaryServiceService {
+export class DictionaryService {
   dictionaryList: Dictionary[] = [
     {
       word: 'book',
@@ -25,6 +25,10 @@ export class DictionaryServiceService {
     {
       word: 'coffee',
       mean: 'cà phê'
+    },
+    {
+      word: 'house',
+      mean: 'nhà'
     }
   ];
 

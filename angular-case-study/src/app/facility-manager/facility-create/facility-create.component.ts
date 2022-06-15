@@ -38,7 +38,7 @@ export class FacilityCreateComponent implements OnInit {
     const facility = this.facilityForm.value;
     this.facilityService.saveFacility(facility);
     this.facilityForm.reset();
-    this.route.navigate(['/facility-list']);
+    this.route.navigate(['/facility/list']);
   }
 
 

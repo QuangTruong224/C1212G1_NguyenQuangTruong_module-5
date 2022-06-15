@@ -3,85 +3,107 @@
     <div class="container">
       <div class="row">
         <div class="booking-form">
-          <form>
+          <form [formGroup]="facilityForm" (ngSubmit)="updateFacility(facilityId)">
+            <div class="form-group">
+              <span class="form-label">Code</span>
+              <input formControlName="facilityId" class="form-control" type="text" placeholder="Enter code facility">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.facilityId.hasError('required') && facilityForm.controls.facilityId.touched">
+                Không được
+                để trống</p>
+            </div>
 
             <div class="form-group">
               <span class="form-label">Name</span>
-              <input class="form-control" type="name" placeholder="Enter your name">
+              <input formControlName="facilityName" class="form-control" type="text" placeholder="Enter your name">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.facilityName.hasError('required') && facilityForm.controls.facilityName.touched">
+                Không được
+                để trống</p>
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.facilityName.hasError('pattern') && facilityForm.controls.facilityName.touched">
+                Tên dịch vụ không được chứa số.</p>
             </div>
 
 
             <div class="form-group">
               <span class="form-label">Service Area</span>
-              <input class="form-control" type="number" placeholder="Enter Service Area">
+              <input formControlName="area" class="form-control" type="text" placeholder="Enter Service Area">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.area.hasError('required') && facilityForm.controls.area.touched">
+                Không được
+                để trống</p>
             </div>
 
 
             <div class="form-group">
               <span class="form-label">Maxium people</span>
-              <input class="form-control" type="number" placeholder="Enter Maxium People">
+
+              <input formControlName="maxPeople" class="form-control"  type="number" placeholder="Enter Maxium People">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.maxPeople.hasError('required') && facilityForm.controls.maxPeople.touched">
+                Không được
+                để trống</p>
             </div>
 
 
             <div class="form-group">
               <span class="form-label">Service Cost</span>
-              <input class="form-control" type="number" placeholder="Enter Service Cost">
+              <input formControlName="cost" class="form-control" type="text" placeholder="Enter Service Cost">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.cost.hasError('required') && facilityForm.controls.cost.touched">
+                Không được
+                để trống</p>
             </div>
 
 
             <div class="form-group">
               <span class="form-label">Pool Area</span>
-              <input class="form-control" type="number" placeholder="Enter Pool Area">
+              <input formControlName="poolArea" class="form-control"  type="number" placeholder="Enter Pool Area">
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.poolArea.hasError('required') && facilityForm.controls.poolArea.touched">
+                Không được
+                để trống</p>
+              <p style="color: red"
+                 *ngIf="facilityForm.controls.poolArea.hasError('pattern') && facilityForm.controls.poolArea.touched">
+                Diện tích hồ bơi phải lớn hơn 0</p>
             </div>
 
             <div class="row no-margin">
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Standard Room</span>
-                  <select class="form-control">
-                    <option value="1">Room</option>
-                    <option value="2">House</option>
-                    <option value="3">Villa</option>
+                  <select formControlName="type" class="form-control">
+                    <option value="Room">Room</option>
+                    <option value="House">House</option>
+                    <option value="Villa">Villa</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
               </div>
-
 
 
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Rent Type</span>
-                  <select class="form-control">
-                    <option value="1">Year</option>
-                    <option value="2">Month</option>
-                    <option value="3">Day</option>
-                    <option value="4">Hour</option>
+                  <select formControlName="standard" class="form-control">
+                    <option value="Year">Year</option>
+                    <option value="Month">Month</option>
+                    <option value="Day">Day</option>
+                    <option value="Hour">Hour</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
               </div>
             </div>
 
-            <!--            <div class="col-sm-1">-->
-            <div class="form-group">
-              <span class="form-label">Education Decree</span>
-              <select class="form-control">
-                <option value="1">Trung cấp</option>
-                <option value="2">Cao đẳng</option>
-                <option value="3">Đại học</option>
-                <option value="4">Sau đại học</option>
-              </select>
-              <span class="select-arrow"></span>
-            </div>
-            <!--            </div>-->
 
             <div class="form-group">
               <span class="form-label">Other Convenience</span>
-              <input class="form-control" type="text" placeholder="Enter Other Convenience">
+              <input formControlName="other" class="form-control" type="text" placeholder="Enter Other Convenience">
             </div>
             <div class="form-btn">
-              <button class="submit-btn">Update</button>
+              <button [disabled]="!facilityForm.valid" class="submit-btn">Update</button>
             </div>
           </form>
         </div>

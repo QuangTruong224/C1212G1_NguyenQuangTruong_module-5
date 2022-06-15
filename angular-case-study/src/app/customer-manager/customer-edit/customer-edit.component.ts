@@ -22,10 +22,10 @@ export class CustomerEditComponent implements OnInit {
         customerName: new FormControl(customer.customerName, [Validators.required]),
         gender: new FormControl(customer.gender),
         dateOfBirth: new FormControl(customer.dateOfBirth),
-        identify: new FormControl(customer.identify,[Validators.required, Validators.pattern('^\\d{9}$')]),
+        identify: new FormControl(customer.identify, [Validators.required, Validators.pattern('^\\d{9}$')]),
         address: new FormControl(customer.address),
-        phone: new FormControl(customer.phone),
-        email: new FormControl(customer.email),
+        phone: new FormControl(customer.phone, [Validators.required, Validators.pattern('^\\d{9}$')]),
+        email: new FormControl(customer.email, [Validators.required, Validators.email]),
         customerType: new FormControl(customer.customerType)
       });
     });
@@ -43,7 +43,7 @@ export class CustomerEditComponent implements OnInit {
     const customer = this.customerForm.value;
     console.log(customer);
     this.customerService.updateCustomer(customerId, customer);
-    this.route.navigate(['/customer-list']);
+    this.route.navigate(['/customer/list']);
     // alert('Cập nhật thành công');
   }
 }

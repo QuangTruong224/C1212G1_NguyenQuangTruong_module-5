@@ -37,6 +37,14 @@ export class ContractService {
     return this.contracts.find(contract => contract.contractId === contractId);
   }
 
+  updateContract(contractId: string, contract: Contract) {
+    for (let i = 0; i < this.contracts.length; i++) {
+      if (this.contracts[i].contractId === contractId) {
+        this.contracts[i] = contract;
+      }
+    }
+  }
+
   deleteContract(contractId: string) {
     for (let i = 0; i < this.contracts.length; i++) {
       if (this.contracts[i].contractId === contractId) {

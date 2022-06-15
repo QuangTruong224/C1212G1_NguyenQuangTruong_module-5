@@ -136,13 +136,13 @@
 
             <div class="form-group">
               <span class="form-label">Url</span>
-<!--              <input formControlName="url" class="form-control" type="url" placeholder="Enter url image">-->
+              <!--              <input formControlName="url" class="form-control" type="url" placeholder="Enter url image">-->
               <input formControlName="url" class="form-control" type='text'>
 
             </div>
 
             <div class="form-btn">
-              <button class="submit-btn">Booking</button>
+              <button [disabled]="!facilityForm.valid" class="submit-btn">Booking</button>
             </div>
           </form>
         </div>

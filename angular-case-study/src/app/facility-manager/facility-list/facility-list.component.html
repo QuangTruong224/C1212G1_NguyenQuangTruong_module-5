@@ -5,7 +5,7 @@
       <h2 class="section-heading text-uppercase" style="background:lightgoldenrodyellow">CÁC LOẠI PHÒNG</h2>
     </div>
     <h2>
-      <a [routerLink]="['/facility-create']">
+      <a [routerLink]="['/facility/create']">
         <button class="btn btn-primary">Create New Service</button>
       </a>
     </h2>
@@ -13,7 +13,7 @@
       <div class="col-lg-4 col-sm-6 mb-4" *ngFor="let facility of facilities">
         <!-- Portfolio item 1-->
         <div class="portfolio-item">
-          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility-edit']">
+          <a class="portfolio-link" data-bs-toggle="modal" [routerLink]="['/facility/edit',facility.facilityId]">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
             </div>

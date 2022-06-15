@@ -31,6 +31,6 @@ export class FacilityListComponent implements OnInit {
 
   deleteFacility(facilityId: string) {
     this.facilityService.deleteFacility(facilityId);
-    this.route.navigate(['/facility-list']);
+    this.route.navigate(['/facility/list']);
   }
 }

@@ -2,7 +2,7 @@
   <div class="container">
     <h2>List customer</h2>
     <h2>
-      <a [routerLink]="['/customer-create']">
+      <a [routerLink]="['/customer/create']">
         <button class="btn btn-primary">Create New Customer</button>
       </a>
     </h2>
@@ -78,7 +78,7 @@
           </a>
         </td>
         <td>
-          <a [routerLink]="['/customer-edit',customer.customerId]">
+          <a [routerLink]="['/customer/edit',customer.customerId]">
             <button class="btn btn-info">Update</button>
           </a>
         </td>

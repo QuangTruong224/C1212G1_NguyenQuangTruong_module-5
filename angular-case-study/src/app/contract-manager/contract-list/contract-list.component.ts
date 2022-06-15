@@ -32,6 +32,6 @@ export class ContractListComponent implements OnInit {
 
   deleteContract(contractId: string) {
     this.contractService.deleteContract(contractId);
-    this.route.navigate(['/contract-list']);
+    this.route.navigate(['/contract/list']);
   }
 }

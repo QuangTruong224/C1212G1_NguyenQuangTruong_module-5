@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Facility} from '../model/facility';
+import {Customer} from '../model/customer';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class FacilityService {
       cost: '500$',
       maxPeople: '10',
       type: 'Room',
-      standard: 'vip',
+      standard: 'year',
       other: 'Có hồ bơi',
       poolArea: '500',
       floor: '10',
@@ -27,7 +28,7 @@ export class FacilityService {
       cost: '700$',
       maxPeople: '10',
       type: 'Room',
-      standard: 'vip',
+      standard: 'month',
       other: 'Có hồ bơi',
       poolArea: '500',
       floor: '10',
@@ -42,7 +43,7 @@ export class FacilityService {
       maxPeople: '10',
       type: 'Room',
       // tslint:disable-next-line:max-line-length
-      standard: 'Normal',
+      standard: 'day',
       other: 'Có hồ bơi',
       poolArea: '500',
       floor: '10',
@@ -67,13 +68,13 @@ export class FacilityService {
     return this.facilities.find(facility => facility.facilityId === facilityId);
   }
 
-  // updateCustomer(customerId: string, customer: Customer) {
-  //   for (let i = 0; i < this.customer.length; i++) {
-  //     if (this.customer[i].customerId === customerId) {
-  //       this.customer[i] = customer;
-  //     }
-  //   }
-  // }
+  updateFacility(facilityId: string, facility: Facility) {
+    for (let i = 0; i < this.facilities.length; i++) {
+      if (this.facilities[i].facilityId === facilityId) {
+        this.facilities[i] = facility;
+      }
+    }
+  }
 
   deleteFacility(facilityId: string) {
     for (let i = 0; i < this.facilities.length; i++) {

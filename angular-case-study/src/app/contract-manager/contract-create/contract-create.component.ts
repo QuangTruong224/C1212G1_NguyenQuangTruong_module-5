@@ -33,6 +33,6 @@ export class ContractCreateComponent implements OnInit {
     const contract = this.contractForm.value;
     this.contractService.saveContract(contract);
     this.contractForm.reset();
-    this.route.navigate(['/contract-list']);
+    this.route.navigate(['/contract/list']);
   }
 }

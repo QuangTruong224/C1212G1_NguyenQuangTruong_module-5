@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "điện thoại"
+    },
+    {
+      "id": 2,
+      "name": "Laptop"
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop",
+      "price": 1500,
+      "description": "Còn hàng",
+      "category": {
+        "id": "2"
+      },
+      "id": 2
+    }
+  ]
+}

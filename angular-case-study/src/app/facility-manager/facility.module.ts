@@ -6,6 +6,8 @@ import {FacilityListComponent} from './facility-list/facility-list.component';
 import {FacilityCreateComponent} from './facility-create/facility-create.component';
 import {FacilityEditComponent} from './facility-edit/facility-edit.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     CommonModule,
     FacilityRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule,
+    HttpClientModule
   ]
 })
 export class FacilityModule {

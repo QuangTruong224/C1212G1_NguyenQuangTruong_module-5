@@ -1,0 +1,82 @@
+{
+  "carTypes": [
+    {
+      "id": 1,
+      "name": "Giường nằm"
+    },
+    {
+      "id": 2,
+      "name": "Ghế ngồi"
+    }
+  ],
+  "carStation": [
+    {
+      "id": 1,
+      "name": "Mai Linh"
+    },
+    {
+      "id": 2,
+      "name": "Hoàng Long"
+    },
+    {
+      "id": 3,
+      "name": "Phương Trang"
+    }
+  ],
+  "carRegister": [
+    {
+      "id": 1,
+      "carNumber": 1255,
+      "carType": {
+        "id": 1,
+        "name": "Giường nằm"
+      },
+      "carStation": {
+        "id": 2,
+        "name": "Hoàg Long"
+      },
+      "departure": "Đà Nẵng",
+      "arrive": "Sài gòn",
+      "phone": "0905386777",
+      "email": "phuongtrang@gmail.com",
+      "departureHour": "13:20",
+      "arriveHour": "15:00"
+    },
+    {
+      "id": 1,
+      "carNumber": 2221,
+      "carType": {
+        "id": 2,
+        "name": "Ghế ngồi"
+      },
+      "carStation": {
+        "id": 1,
+        "name": "Mai Linh"
+      },
+      "departure": "Đà Nẵng",
+      "arrive": "Sài gòn",
+      "phone": "0905123456",
+      "email": "mailinh@gmail.com",
+      "departureHour": "13:20",
+      "arriveHour": "15:00"
+    },
+    {
+      "id": 1,
+      "carNumber": 2221,
+      "carType": {
+        "id": 1,
+        "name": "Giường nằm"
+      },
+      "carStation": {
+        "id": 1,
+        "name": "Mai Linh"
+      },
+      "departure": "Đà Nẵng",
+      "arrive": "Sài gòn",
+      "phone": "0905123456",
+      "email": "chanhtran@gmail.com",
+      "departureHour": "13:20",
+      "arriveHour": "15:00"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ export class FacilityListComponent implements OnInit {
   facilities: Facility [] = [];
   idDelete: string;
   nameDelete: string;
+  p: number;
 
   constructor(private facilityService: FacilityService, private route: Router) {
   }
@@ -21,16 +22,29 @@ export class FacilityListComponent implements OnInit {
   }
 
   getAll() {
-    this.facilities = this.facilityService.getAll();
+    this.facilityService.getAll().subscribe(facilities => {
+      this.facilities = facilities;
+    });
   }
 
-  deleteModal(facilityId: string, facilityName: string) {
-    this.idDelete = facilityId;
+  deleteModal(id: string, facilityName: string) {
+    this.idDelete = id;
     this.nameDelete = facilityName;
   }
 
-  deleteFacility(facilityId: string) {
-    this.facilityService.deleteFacility(facilityId);
-    this.route.navigate(['/facility/list']);
+  deleteFacility(id: string) {
+    this.facilityService.deleteFacility(id).subscribe(() => {
+      // alert('Successful');
+      this.ngOnInit();
+    }, error => {
+
+    }, () => {
+      this.route.navigate(['/facility/list']);
+    });
   }
+
+  // deleteFacility(facilityId: string) {
+  //   this.facilityService.deleteFacility(facilityId);
+  //   this.route.navigate(['/facility/list']);
+  // }
 }

@@ -12,32 +12,33 @@
       <div class="row">
         <div class="col">
           <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="Search"
-                 name="name">
+                  name="keySearch1" id="keySearch1" #keySearch1>
         </div>
         <div class="col">
           <input class="form-control mr-sm-2" type="search" placeholder="Phone" aria-label="Search"
-                 name="phone">
+                  name="keySearch2" id="keySearch2" #keySearch2>
         </div>
 
         <div class="col">
           <select name="customerType"
-                  class="form-control">
-            <option value="-1">Select customerType</option>
-            <option value="1"> Diamond</option>
-            <option value="2"> Platinum</option>
-            <option value="3"> Gold</option>
-            <option value="4"> Silver</option>
-            <option value="5"> Member</option>
+                  class="form-control" name="keySearch3" id="keySearch3" #keySearch3>
+            <option value="">Select customerType</option>
+            <option value="Diamond"> Diamond</option>
+            <option value="Platinum"> Platinum</option>
+            <option value="Gold"> Gold</option>
+            <option value="Silver"> Silver</option>
+            <option value="Member"> Member</option>
           </select>
         </div>
       </div>
       <div class="col">
-        <button class="btn btn-outline-success my-2 my-sm-7" type="submit">Search</button>
+        <button (click)="search()" class="btn btn-outline-success my-2 my-sm-7" type="submit">Search</button>
       </div>
     </div>
     <table id="tableStudent" class="table table-borderless table-striped">
       <thead class="thead-dark">
       <tr>
+        <th scope="col">#</th>
         <th scope="col">Code</th>
         <th scope="col">Name</th>
         <th scope="col">Gender</th>
@@ -53,8 +54,9 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let customer of customers">
-        <td>{{customer.customerId}}</td>
+      <tr *ngFor="let customer of customers|paginate : { itemsPerPage: 2, currentPage: p }; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{customer.id}}</td>
         <td>{{customer.customerName}}</td>
         <td>{{customer.gender}}</td>
         <td>{{customer.dateOfBirth}}</td>
@@ -66,7 +68,7 @@
 
         <td>
           <button
-            (click)="deleteModal(customer.customerId, customer.customerName)" class="btn btn-danger"
+            (click)="deleteModal(customer.id, customer.customerName)" class="btn btn-danger"
             data-target="#deleteModal"
             data-toggle="modal">
             Delete
@@ -78,7 +80,7 @@
           </a>
         </td>
         <td>
-          <a [routerLink]="['/customer/edit',customer.customerId]">
+          <a [routerLink]="['/customer/edit',customer.id]">
             <button class="btn btn-info">Update</button>
           </a>
         </td>
@@ -86,31 +88,17 @@
       </tbody>
     </table>
   </div>
+
+
   <!--        paging-->
   <nav class="blog-pagination d-flex justify-content-center py-3">
-    <ul class="pagination">
-      <!--            <li class="page-item active px-1">-->
-      <!--                <a th:href="@{/employees(page=${employees.number - 1},-->
-      <!--                                    name=${nameVal},-->
-      <!--                                    phone=${phoneVal},-->
-      <!--                                    department=${departmentVal})}" class="page-link">Previous</a>-->
-      <!--            </li>-->
-      <li class="page-item px-1">
-        <a href="#" class="page-link">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link">
-          <span>1</span>
-          <span>/</span>
-          <span>5</span>
-        </a>
-      </li>
-      <li class="page-item px-1">
-        <a href="#" class="page-link">Next</a>
-      </li>
-    </ul>
+    <div style="justify-content: space-around;display: flex;">
+      <pagination-controls (pageChange)="p = $event" class=" page-item"></pagination-controls>
+    </div>
   </nav>
   <!--        paging-->
+
+
 </section>
 <!-- ================ Explore section end ================= -->
 <hr>

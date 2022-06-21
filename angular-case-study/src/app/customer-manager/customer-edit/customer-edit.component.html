@@ -3,28 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="booking-form">
-          <form [formGroup]="customerForm" (ngSubmit)="updateCustomer(customerId)">
-
+          <form [formGroup]="customerForm" (ngSubmit)="updateCustomer(id)">
 
             <div class="form-group">
               <span class="form-label">Name</span>
               <input class="form-control" type="text" formControlName="customerName" placeholder="Enter your name">
               <p style="color: red"
                  *ngIf="customerForm.controls.customerName.hasError('required') && customerForm.controls.customerName.touched">
-                Không được
-                để trống</p>
-            </div>
-
-            <div class="form-group">
-              <span class="form-label">Code</span>
-              <input class="form-control" type="text" formControlName="customerId" placeholder="Enter code">
-              <p style="color: red"
-                 *ngIf="customerForm.controls.customerId.hasError('required') && customerForm.controls.customerId.touched">
-                Không được
-                để trống</p>
-              <p style="color: red"
-                 *ngIf="customerForm.controls.customerId.hasError('pattern') && customerForm.controls.customerId.touched">
-                Nhập đúng định dạng (KH-XXXX)</p>
+                Cannot to blank</p>
             </div>
 
 
@@ -39,11 +25,10 @@
               <input class="form-control" formControlName="identify" type="text" placeholder="Enter id card">
               <p style="color: red"
                  *ngIf="customerForm.controls.identify.hasError('required') && customerForm.controls.identify.touched">
-                Không được
-                để trống</p>
+                Cannot to blank</p>
               <p style="color: red"
                  *ngIf="customerForm.controls.identify.hasError('pattern') && customerForm.controls.identify.touched">
-                Số chứng minh phải 9 số</p>
+                ID card must have 9 numbers</p>
             </div>
 
 
@@ -54,11 +39,10 @@
                   <input class="form-control" formControlName="phone" type="text" placeholder="Enter phone">
                   <p style="color: red"
                      *ngIf="customerForm.controls.phone.hasError('required') && customerForm.controls.phone.touched">
-                    Không được
-                    để trống</p>
+                    Cannot to blank</p>
                   <p style="color: red"
                      *ngIf="customerForm.controls.phone.hasError('pattern') && customerForm.controls.phone.touched">
-                    Số điện thoại không đúng</p>
+                    Incorrect phone number</p>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -67,11 +51,10 @@
                   <input class="form-control" formControlName="email" type="email" placeholder="Enter your email">
                   <p style="color: red"
                      *ngIf="customerForm.controls.email.hasError('required') && customerForm.controls.email.touched">
-                    Không được
-                    để trống</p>
+                    Cannot to blank</p>
                   <p style="color: red"
                      *ngIf="customerForm.controls.email.hasError('email') && customerForm.controls.email.touched">
-                    email không đúng</p>
+                    email is not correct</p>
                 </div>
               </div>
             </div>
@@ -88,8 +71,8 @@
                 <div class="form-group">
                   <span class="form-label">Gender</span>
                   <select formControlName="gender" class="form-control">
-                    <option value="Nam">Nam</option>
-                    <option value="Nữ">Nữ</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
                   </select>
                   <span class="select-arrow"></span>
                 </div>
@@ -108,8 +91,18 @@
                 </div>
               </div>
             </div>
-            <div class="form-btn">
-              <button type="submit" [disabled]="!customerForm.valid" class="submit-btn">Update</button>
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <button type="submit" routerLink="/customer/list" class="submit-btn">Cancel</button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+
+                  <button type="submit" [disabled]="!customerForm.valid" class="submit-btn">Submit</button>
+                </div>
+              </div>
             </div>
           </form>
         </div>

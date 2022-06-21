@@ -38,16 +38,16 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let contract of contracts">
-        <td>{{contract.contractId}}</td>
-        <td>{{contract.contractName}}</td>
+      <tr *ngFor="let contract of contracts|paginate : { itemsPerPage: 2, currentPage: p }; index as i">
+        <td>{{i + 1}}</td>
+        <td>{{contract.customerName}}</td>
         <td>{{contract.serviceName}}</td>
         <td>{{contract.startDay|date:'dd/MM/yyyy'}}</td>
         <td>{{contract.endDay|date:'dd/MM/yyyy'}}</td>
         <td>{{contract.deposit|currency:'VND'}}</td>
 
         <td>
-          <button (click)="deleteModal(contract.contractId, contract.contractName)"
+          <button (click)="deleteModal(contract.id, contract.customerName.customerName)"
                   class="btn btn-danger" data-target="#deleteModal"
                   data-toggle="modal">
             Delete
@@ -71,27 +71,9 @@
   </div>
   <!--        paging-->
   <nav class="blog-pagination d-flex justify-content-center py-3">
-    <ul class="pagination">
-      <!--            <li class="page-item active px-1">-->
-      <!--                <a th:href="@{/employees(page=${employees.number - 1},-->
-      <!--                                    name=${nameVal},-->
-      <!--                                    phone=${phoneVal},-->
-      <!--                                    department=${departmentVal})}" class="page-link">Previous</a>-->
-      <!--            </li>-->
-      <li class="page-item px-1">
-        <a href="#" class="page-link">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link">
-          <span>1</span>
-          <span>/</span>
-          <span>5</span>
-        </a>
-      </li>
-      <li class="page-item px-1">
-        <a href="#" class="page-link">Next</a>
-      </li>
-    </ul>
+    <div style="justify-content: space-around;display: flex;">
+      <pagination-controls (pageChange)="p = $event" class=" page-item"></pagination-controls>
+    </div>
   </nav>
   <!--        paging-->
 </section>
@@ -115,7 +97,9 @@
       <div class="modal-footer">
         <input type="hidden" name="id" id="idDelete">
         <button type="button" class="btn btn-secondary mx-1" data-dismiss="modal">Cancel</button>
-        <button (click)="deleteContract(idDelete)" type="submit" class="btn btn-danger mx-1 " data-dismiss="modal">Delete</button>
+        <button (click)="deleteContract(idDelete)" type="submit" class="btn btn-danger mx-1 " data-dismiss="modal">
+          Delete
+        </button>
       </div>
     </div>
   </div>

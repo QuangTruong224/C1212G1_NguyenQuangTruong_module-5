@@ -8,7 +8,7 @@ import {FacilityEditComponent} from './facility-edit/facility-edit.component';
 const routes: Routes = [
   {path: 'list', component: FacilityListComponent},
   {path: 'create', component: FacilityCreateComponent},
-  {path: 'edit/:facilityId', component: FacilityEditComponent}
+  {path: 'edit/:id', component: FacilityEditComponent}
 ];
 
 @NgModule({

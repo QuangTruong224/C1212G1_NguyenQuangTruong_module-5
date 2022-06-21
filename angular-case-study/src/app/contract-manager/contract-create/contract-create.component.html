@@ -5,22 +5,23 @@
         <div class="booking-form">
           <form [formGroup]="contractForm" (ngSubmit)="createContract()">
 
-            <div class="form-group">
-              <span class="form-label">Code contract</span>
-              <input formControlName="contractId" class="form-control" type="text" placeholder="Enter code">
-              <p style="color: red"
-                 *ngIf="contractForm.controls.contractId.hasError('required') && contractForm.controls.contractId.touched">
-                Không được
-                để trống</p>
-            </div>
+<!--            <div class="form-group">-->
+<!--              <span class="form-label">Code contract</span>-->
+<!--              <input formControlName="id" class="form-control" type="text" placeholder="Enter code">-->
+<!--              <p style="color: red"-->
+<!--                 *ngIf="contractForm.controls.id.hasError('required') && contractForm.controls.id.touched">-->
+<!--                Không được-->
+<!--                để trống</p>-->
+<!--            </div>-->
 
 
             <div class="form-group">
               <span class="form-label">Customer Name</span>
-              <select formControlName="customerName" class="form-control">
-                <option value="1">Nguyen Văn A</option>
-                <option value="2">Le Văn B</option>
-              </select>
+              <datalist id="customers">
+                <option *ngFor="let f of customers" [ngValue]="f">{{f.customerName}}</option>
+              </datalist>
+              <input formControlName="customerName" class="form-control" list="customers" id="customer" placeholder="Select customer">
+<!--              <label for="customer">Select customers</label>-->
               <p style="color: red"
                  *ngIf="contractForm.controls.customerName.hasError('required') && contractForm.controls.customerName.touched">
                 Không được
@@ -31,10 +32,11 @@
 
             <div class="form-group">
               <span class="form-label">Service</span>
-              <select formControlName="serviceName" class="form-control">
-                <option value="1">Ocean Suite</option>
-                <option value="2">Villa Ocean View</option>
-              </select>
+              <datalist id="facilities">
+                <option *ngFor="let f of facilities" [ngValue]="f">{{f.facilityName}}</option>
+              </datalist>
+              <input formControlName="serviceName" class="form-control" list="facilities" id="facility" placeholder="Select Facility">
+<!--              <label for="facility">Select Facility</label>-->
               <p style="color: red"
                  *ngIf="contractForm.controls.serviceName.hasError('required') && contractForm.controls.serviceName.touched">
                 Không được
@@ -88,7 +90,7 @@
 
 
             <div class="form-btn">
-              <button type="submit" [disabled]="!contractForm.valid" class="submit-btn">Contract</button>
+              <button type="submit"  class="submit-btn">Contract</button>
             </div>
           </form>
         </div>

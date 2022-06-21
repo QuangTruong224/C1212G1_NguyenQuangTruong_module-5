@@ -1,19 +1,127 @@
 {
-  "posts": [
+  "customers": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": "KH-8888",
+      "customerName": "Bình Giảng 22",
+      "gender": "Female",
+      "dateOfBirth": "2022-06-02",
+      "identify": "123456789",
+      "address": "Đà NẴng",
+      "phone": "0905987789",
+      "email": "TR@G",
+      "customerType": "Diamond"
+    },
+    {
+      "id": "KH-0002",
+      "customerName": "Mỹ Hậu",
+      "gender": "Male",
+      "dateOfBirth": "2022-06-04",
+      "identify": "123456765",
+      "address": "Đà NẴng",
+      "phone": "0901123456",
+      "email": "myhau@gmail.com",
+      "customerType": "Silver"
+    },
+    {
+      "customerName": "tr",
+      "id": "KH-9991",
+      "dateOfBirth": "2022-06-03",
+      "identify": "123456789",
+      "phone": "0901234566",
+      "email": "TR@G",
+      "address": "DD",
+      "gender": "Nam",
+      "customerType": "Diamond"
+    },
+    {
+      "customerName": "trường",
+      "id": "KH-8512",
+      "dateOfBirth": "2022-06-10",
+      "identify": "123456789",
+      "phone": "0905386712",
+      "email": "TRU@G",
+      "address": "DĐ",
+      "gender": "Nữ",
+      "customerType": "Gold"
+    },
+    {
+      "customerName": "quANG DŨNG",
+      "id": "KH-9900",
+      "dateOfBirth": "2022-06-14",
+      "identify": "123456789",
+      "phone": "0905386717",
+      "email": "tru@gmail.com",
+      "address": "Quảng Nam",
+      "gender": "Male",
+      "customerType": "Gold"
+    },
+    {
+      "customerName": "Nguyễn Quang Trường",
+      "id": "KH-1234",
+      "dateOfBirth": "2022-06-02",
+      "identify": "123456789",
+      "phone": "0562590063",
+      "email": "changtraitre2000@gmail.com",
+      "address": "201791705",
+      "gender": "Male",
+      "customerType": "Silver"
     }
   ],
-  "comments": [
+  "facilities": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "DV-001",
+      "facilityName": "Phòng Suite hướng biển",
+      "area": "85m",
+      "cost": "500$",
+      "maxPeople": "10",
+      "type": "2",
+      "standard": "year",
+      "other": "Có hồ bơi",
+      "poolArea": "500",
+      "floor": "10",
+      "url": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722773/722773/160407105.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"
+    },
+    {
+      "id": "DV-002",
+      "facilityName": "Phòng Suite hướng biển",
+      "area": 14,
+      "cost": "500$",
+      "maxPeople": "10",
+      "type": "2",
+      "standard": "year",
+      "other": "Có hồ bơi",
+      "poolArea": "500",
+      "floor": "10",
+      "url": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722779/722779/63984540_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=1536&q=75"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "contracts": [
+    {
+      "id": 1,
+      "customerName": "tr",
+      "serviceName": "Phòng Suite hướng biển",
+      "startDay": "2022-06-01",
+      "endDay": "2022-06-29",
+      "deposit": 1111,
+      "total": 1111111
+    },
+    {
+      "id": 2,
+      "customerName": "Bình Giảng 22",
+      "serviceName": "Phòng Suite hướng biển",
+      "startDay": "2022-06-09",
+      "endDay": "2022-06-17",
+      "deposit": 112321,
+      "total": 123213213213
+    },
+    {
+      "id": 3,
+      "customerName": "Nguyễn Quang Trường",
+      "serviceName": "Phòng Suite hướng biển",
+      "startDay": "2022-06-01",
+      "endDay": "2022-06-30",
+      "deposit": 12,
+      "total": 123321
+    }
+  ]
 }

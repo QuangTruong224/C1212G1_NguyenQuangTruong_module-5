@@ -3,15 +3,15 @@
     <div class="container">
       <div class="row">
         <div class="booking-form">
-          <form [formGroup]="facilityForm" (ngSubmit)="updateFacility(facilityId)">
-            <div class="form-group">
-              <span class="form-label">Code</span>
-              <input formControlName="facilityId" class="form-control" type="text" placeholder="Enter code facility">
-              <p style="color: red"
-                 *ngIf="facilityForm.controls.facilityId.hasError('required') && facilityForm.controls.facilityId.touched">
-                Không được
-                để trống</p>
-            </div>
+          <form [formGroup]="facilityForm" (ngSubmit)="updateFacility(id)">
+<!--            <div class="form-group">-->
+<!--              <span class="form-label">Code</span>-->
+<!--              <input formControlName="id" class="form-control" type="text" placeholder="Enter code facility">-->
+<!--              <p style="color: red"-->
+<!--                 *ngIf="facilityForm.controls.id.hasError('required') && facilityForm.controls.id.touched">-->
+<!--                Không được-->
+<!--                để trống</p>-->
+<!--            </div>-->
 
             <div class="form-group">
               <span class="form-label">Name</span>
@@ -23,61 +23,87 @@
               <p style="color: red"
                  *ngIf="facilityForm.controls.facilityName.hasError('pattern') && facilityForm.controls.facilityName.touched">
                 Tên dịch vụ không được chứa số.</p>
+
             </div>
 
 
             <div class="form-group">
               <span class="form-label">Service Area</span>
-              <input formControlName="area" class="form-control" type="text" placeholder="Enter Service Area">
+              <input formControlName="area" class="form-control" type="number" placeholder="Enter Service Area">
               <p style="color: red"
                  *ngIf="facilityForm.controls.area.hasError('required') && facilityForm.controls.area.touched">
                 Không được
                 để trống</p>
             </div>
 
-
-            <div class="form-group">
-              <span class="form-label">Maxium people</span>
-
-              <input formControlName="maxPeople" class="form-control"  type="number" placeholder="Enter Maxium People">
-              <p style="color: red"
-                 *ngIf="facilityForm.controls.maxPeople.hasError('required') && facilityForm.controls.maxPeople.touched">
-                Không được
-                để trống</p>
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Maxium people</span>
+                  <input formControlName="maxPeople" class="form-control" type="number"
+                         placeholder="Enter Maxium People">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.maxPeople.hasError('required') && facilityForm.controls.maxPeople.touched">
+                    Không được
+                    để trống</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Service Cost</span>
+                  <input formControlName="cost" class="form-control" type="number" placeholder="Enter Service Cost">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.cost.hasError('required') && facilityForm.controls.cost.touched">
+                    Không được
+                    để trống</p>
+                </div>
+              </div>
             </div>
 
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Pool Area</span>
+                  <input formControlName="poolArea" class="form-control" type="number" placeholder="Enter Pool Area">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.poolArea.hasError('required') && facilityForm.controls.poolArea.touched">
+                    Không được
+                    để trống</p>
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.poolArea.hasError('pattern') && facilityForm.controls.poolArea.touched">
+                    Diện tích hồ bơi phải lớn hơn 0</p>
+                </div>
+              </div>
 
-            <div class="form-group">
-              <span class="form-label">Service Cost</span>
-              <input formControlName="cost" class="form-control" type="text" placeholder="Enter Service Cost">
-              <p style="color: red"
-                 *ngIf="facilityForm.controls.cost.hasError('required') && facilityForm.controls.cost.touched">
-                Không được
-                để trống</p>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Floor</span>
+                  <input formControlName="floor" class="form-control" type="number" placeholder="Enter floor">
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.floor.hasError('required') && facilityForm.controls.floor.touched">
+                    Không được
+                    để trống</p>
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.floor.hasError('pattern') && facilityForm.controls.floor.touched">
+                    Diện tích hồ bơi phải lớn hơn 0</p>
+                </div>
+              </div>
             </div>
 
-
-            <div class="form-group">
-              <span class="form-label">Pool Area</span>
-              <input formControlName="poolArea" class="form-control"  type="number" placeholder="Enter Pool Area">
-              <p style="color: red"
-                 *ngIf="facilityForm.controls.poolArea.hasError('required') && facilityForm.controls.poolArea.touched">
-                Không được
-                để trống</p>
-              <p style="color: red"
-                 *ngIf="facilityForm.controls.poolArea.hasError('pattern') && facilityForm.controls.poolArea.touched">
-                Diện tích hồ bơi phải lớn hơn 0</p>
-            </div>
 
             <div class="row no-margin">
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Standard Room</span>
                   <select formControlName="type" class="form-control">
-                    <option value="Room">Room</option>
-                    <option value="House">House</option>
-                    <option value="Villa">Villa</option>
+                    <option value="1">Room</option>
+                    <option value="2">House</option>
+                    <option value="3">Villa</option>
                   </select>
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.type.hasError('required') && facilityForm.controls.type.touched">
+                    Không được
+                    để trống</p>
                   <span class="select-arrow"></span>
                 </div>
               </div>
@@ -86,12 +112,16 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <span class="form-label">Rent Type</span>
-                  <select formControlName="standard" class="form-control">
-                    <option value="Year">Year</option>
-                    <option value="Month">Month</option>
-                    <option value="Day">Day</option>
-                    <option value="Hour">Hour</option>
+                  <select formControlName="type" class="form-control">
+                    <option value="1">Year</option>
+                    <option value="2">Month</option>
+                    <option value="3">Day</option>
+                    <option value="4">Hour</option>
                   </select>
+                  <p style="color: red"
+                     *ngIf="facilityForm.controls.type.hasError('required') && facilityForm.controls.type.touched">
+                    Không được
+                    để trống</p>
                   <span class="select-arrow"></span>
                 </div>
               </div>
@@ -102,8 +132,15 @@
               <span class="form-label">Other Convenience</span>
               <input formControlName="other" class="form-control" type="text" placeholder="Enter Other Convenience">
             </div>
+
+            <div class="form-group">
+              <span class="form-label">Url</span>
+              <!--              <input formControlName="url" class="form-control" type="url" placeholder="Enter url image">-->
+              <input formControlName="url" class="form-control" type='text'>
+
+            </div>
             <div class="form-btn">
-              <button [disabled]="!facilityForm.valid" class="submit-btn">Update</button>
+              <button class="submit-btn">Update</button>
             </div>
           </form>
         </div>

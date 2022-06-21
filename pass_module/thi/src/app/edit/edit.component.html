@@ -1,0 +1,122 @@
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="booking-form">
+          <form [formGroup]="carRegisterForm" (ngSubmit)="update(id)">
+
+            <div class="form-group">
+              <span class="form-label">Số xe</span>
+              <input type="text" class="form-control" formControlName="carNumber" id="carNumber" readonly>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Loại xe</span>
+              <select class="form-control" formControlName="carType">
+                <option *ngFor="let type of carTypeList" [ngValue]="type"
+                        [selected]="type.name == carRegisterForm.controls.carType.value.name">{{type.name}}</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Nhà xe</span>
+              <select class="form-control" formControlName="carStation" type="text" placeholder="Enter id card">
+                <option *ngFor="let type of carStationList" [ngValue]="type"
+                        [selected]="type.name == carRegisterForm.controls.carStation.value.name">{{type.name}}</option>
+              </select>
+            </div>
+
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Nơi đi</span>
+                  <!--                  <input class="form-control" formControlName="departure" type="text" placeholder="Enter departure">-->
+                  <select formControlName="departure" class="form-control">
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Sài Gòn">Sài Gòn</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Nơi đến</span>
+                  <!--                  <input class="form-control" formControlName="arrive" type="email" placeholder="Enter your email">-->
+                  <select formControlName="arrive" class="form-control">
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Sài Gòn">Sài Gòn</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Điện thoại</span>
+              <input class="form-control" formControlName="phone" type="text" placeholder="Enter phone">
+              <p style="color: red"
+                 *ngIf="carRegisterForm.controls.phone.hasError('required') && carRegisterForm.controls.phone.touched">
+                Không được bỏ trống</p>
+              <p style="color: red"
+                 *ngIf="carRegisterForm.controls.phone.hasError('pattern') && carRegisterForm.controls.phone.touched">
+                Phải bắt đầu bằng 090 hoặc 093 hoặc 097 và có 10 số</p>
+            </div>
+            <div class="form-group">
+              <span class="form-label">Gmail</span>
+              <input class="form-control" formControlName="email" type="email" placeholder="Enter email">
+              <p style="color: red"
+                 *ngIf="carRegisterForm.controls.email.hasError('required') && carRegisterForm.controls.email.touched">
+                Không được để trống</p>
+              <p style="color: red"
+                 *ngIf="carRegisterForm.controls.email.hasError('email') && carRegisterForm.controls.email.touched">
+                Phải đúng định dạng email</p>
+            </div>
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ đi</span>
+                  <input class="form-control" formControlName="departureHour" type="time"
+                         placeholder="Enter departureHour">
+                  <p style="color: red"
+                     *ngIf="carRegisterForm.controls.departureHour.hasError('required') && carRegisterForm.controls.departureHour.touched">
+                    Không được bỏ trống</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <span class="form-label">Giờ đến</span>
+                  <input class="form-control" formControlName="arriveHour" type="time" placeholder="Enter arriveHour">
+                  <p style="color: red"
+                     *ngIf="carRegisterForm.controls.arriveHour.hasError('required') && carRegisterForm.controls.arriveHour.touched">
+                    Không được bỏ trống</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-margin">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <button type="submit" routerLink="carRegister-list" class="submit-btn">Quay về</button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <button [disabled]="!carRegisterForm.valid" type="submit" class="submit-btn">Sửa</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

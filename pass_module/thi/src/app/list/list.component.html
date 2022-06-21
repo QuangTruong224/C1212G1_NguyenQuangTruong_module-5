@@ -1,0 +1,130 @@
+<section class="section-margin section-margin--small">
+  <div>
+    <h2>Danh sách các xe đăng ký ở bến xe XYZ</h2>
+    <h2>
+      <button [routerLink]="['/create']" class="btn btn-primary">Thêm mới</button>
+    </h2>
+  </div>
+
+    <div class="form-inline my-lg-3">
+      <div class="row">
+        <div class="col">
+          <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="Search"
+                 name="name">
+        </div>
+
+        <div class="col">
+          <select name="customerType"
+                  class="form-control">
+            <option value="-1">Select car type</option>
+<!--            <option value="1"> Diamond</option>-->
+<!--            <option value="2"> Platinum</option>-->
+<!--            <option value="3"> Gold</option>-->
+<!--            <option value="4"> Silver</option>-->
+<!--            <option value="5"> Member</option>-->
+          </select>
+        </div>
+      </div>
+
+
+
+  </div>
+  <table id="tableStudent" class="table table-borderless table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Số xe</th>
+      <th scope="col">Loại xe</th>
+      <th scope="col">Tên nhà xe</th>
+      <th scope="col">Điểm đi</th>
+      <th scope="col">Điểm đến</th>
+      <th scope="col">Số điện thoại</th>
+      <th scope="col">Email</th>
+      <th scope="col">Giờ đi</th>
+      <th scope="col">Giờ đến</th>
+      <th scope="col">Xóa</th>
+      <th scope="col">Sửa</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let carRegister of carRegisters|paginate : { itemsPerPage: 3, currentPage: p }; index as i">
+      <td>{{carRegister.carNumber}}</td>
+      <td>{{carRegister.carType.name}}</td>
+      <td>{{carRegister.carStation.name}}</td>
+      <td>{{carRegister.departure}}</td>
+      <td>{{carRegister.arrive}}</td>
+      <td>{{carRegister.phone}}</td>
+      <td>{{carRegister.email}}</td>
+      <td>{{carRegister.departureHour}}</td>
+      <td>{{carRegister.arriveHour}}</td>
+
+      <td>
+        <button
+          (click)="deleteModal(carRegister.id,carRegister.carNumber)" class="btn btn-danger"
+          data-target="#deleteModal"
+          data-toggle="modal">
+          Xóa
+        </button>
+      </td>
+      <td>
+        <a [routerLink]="['/edit',carRegister.id]">
+          <button class="btn btn-info">Sửa</button>
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <!--        paging-->
+  <nav class="blog-pagination d-flex justify-content-center py-3">
+    <div style="justify-content: space-around;display: flex;">
+      <pagination-controls (pageChange)="p = $event" class=" page-item"></pagination-controls>
+    </div>
+  </nav>
+  <!--        paging-->
+
+
+</section>
+<!-- ================ Explore section end ================= -->
+<hr>
+
+<!-- Modal -->
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete customer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn có muốn xóa số xe này không?</p>
+        <!--        <span class="text-danger font-weight-bold">{{idDelete}}</span>-->
+        <span class="text-danger font-weight-bold">{{nameDelete}}</span>
+        <br>
+        <!--        <span class="text-danger font-weight-bold">{{nameDelete}}</span>-->
+
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="id" id="idDelete">
+        <button type="button" class="btn btn-secondary mx-1" data-dismiss="modal">Hủy bỏ</button>
+        <button (click)="deleteCargister(idDelete)" type="submit" class="btn btn-danger mx-1" data-dismiss="modal">
+          Xóa
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#tableStudent').dataTable({
+      "dom": 'lrtip',
+      "lengthChange": false,
+      "pageLength": 3
+    });
+  });
+</script>
+

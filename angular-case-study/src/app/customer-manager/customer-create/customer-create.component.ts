@@ -13,12 +13,12 @@ import {CustomerService} from '../customer.service';
 })
 export class CustomerCreateComponent implements OnInit {
   customerForm: FormGroup;
-  customer: Customer[] = [];
+  customers: Customer[] = [];
 
   constructor(private customerService: CustomerService, private route: Router) {
     this.customerForm = new FormGroup({
       customerName: new FormControl('', [Validators.required]),
-      customerId: new FormControl('', [Validators.required, Validators.pattern('^KH-[0-9]{4}$')]),
+      id: new FormControl('', [Validators.required, Validators.pattern('^KH-[0-9]{4}$')]),
       dateOfBirth: new FormControl(''),
       identify: new FormControl('', [Validators.required, Validators.pattern('^\\d{9}$')]),
       phone: new FormControl('', [Validators.required, Validators.pattern('^(84|0[3|5|7|8|9])+([0-9]{8})$')]),
@@ -35,8 +35,17 @@ export class CustomerCreateComponent implements OnInit {
 
   createCustomer() {
     const customer = this.customerForm.value;
-    this.customerService.saveCustomer(customer);
-    this.customerForm.reset();
-    this.route.navigate(['/customer/list']);
+    console.log(this.customerForm.value);
+    // this.customerService.saveCustomer(customer);
+    // this.customerForm.reset();
+
+    this.customerService.saveCustomer(customer).subscribe(() => {
+      }, error => {
+
+      },
+      () => {
+        this.route.navigateByUrl('/customer/list');
+      });
+    // this.route.navigate(['/customer/list']);
   }
 }

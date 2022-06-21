@@ -10,24 +10,29 @@ import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 })
 export class CustomerEditComponent implements OnInit {
   customerForm: FormGroup;
-  customerId: string;
+  id: string;
 
   constructor(private customerService: CustomerService,
               private activatedRoute: ActivatedRoute, private route: Router) {
-    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-      this.customerId = paramMap.get('customerId');
-      const customer = this.getCustomer(this.customerId);
-      this.customerForm = new FormGroup({
-        customerId: new FormControl(customer.customerId, [Validators.required, Validators.pattern('^KH-[0-9]{4}$')]),
-        customerName: new FormControl(customer.customerName, [Validators.required]),
-        gender: new FormControl(customer.gender),
-        dateOfBirth: new FormControl(customer.dateOfBirth),
-        identify: new FormControl(customer.identify, [Validators.required, Validators.pattern('^\\d{9}$')]),
-        address: new FormControl(customer.address),
-        phone: new FormControl(customer.phone, [Validators.required, Validators.pattern('^\\d{9}$')]),
-        email: new FormControl(customer.email, [Validators.required, Validators.email]),
-        customerType: new FormControl(customer.customerType)
-      });
+    activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = paramMap.get('id');
+      this.getCustomer(this.id);
+      // this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      //   this.id = paramMap.get('id');
+      //   this.customerService.findById(this.id).subscribe(customer => {
+      //     this.customerForm = new FormGroup({
+
+    });
+    this.customerForm = new FormGroup({
+      id: new FormControl(''),
+      customerName: new FormControl(''),
+      gender: new FormControl(''),
+      dateOfBirth: new FormControl(''),
+      identify: new FormControl('', [Validators.pattern('^\\d{9}$')]),
+      address: new FormControl(''),
+      phone: new FormControl('', [Validators.pattern('^(84|0[3|5|7|8|9])+([0-9]{8})$')]),
+      email: new FormControl('', [Validators.email]),
+      customerType: new FormControl('')
     });
 
   }
@@ -35,15 +40,30 @@ export class CustomerEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getCustomer(customerId: string) {
-    return this.customerService.findById(customerId);
+  getCustomer(id: string) {
+    return this.customerService.findById(id).subscribe(customer => {
+      this.customerForm.patchValue(customer);
+    });
   }
 
-  updateCustomer(customerId: string) {
+  updateCustomer(id: string) {
     const customer = this.customerForm.value;
-    console.log(customer);
-    this.customerService.updateCustomer(customerId, customer);
-    this.route.navigate(['/customer/list']);
-    // alert('Cập nhật thành công');
+    this.customerService.updateCustomer(id, customer).subscribe(() => {
+      // alert('successful');
+    }, e => {
+      console.log(e);
+    }, () => {
+      this.route.navigate(['customer/list']);
+    });
   }
 }
+
+//
+//     updateCustomer(id: string) {
+//     const customer = this.customerForm.value;
+//     console.log(customer);
+//     this.customerService.updateCustomer(id, customer);
+//     this.route.navigate(['/customer/list']);
+//     // alert('Cập nhật thành công');
+//   }
+// }

@@ -7,9 +7,9 @@
 
             <div class="form-group">
               <span class="form-label">Code facility</span>
-              <input formControlName="facilityId" class="form-control" type="text" placeholder="Enter code facility">
+              <input formControlName="id" class="form-control" type="text" placeholder="Enter code facility">
               <p style="color: red"
-                 *ngIf="facilityForm.controls.facilityId.hasError('required') && facilityForm.controls.facilityId.touched">
+                 *ngIf="facilityForm.controls.id.hasError('required') && facilityForm.controls.id.touched">
                 Không được
                 để trống</p>
             </div>

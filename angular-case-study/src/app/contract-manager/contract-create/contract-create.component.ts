@@ -4,6 +4,10 @@ import {Contract} from '../../model/contract';
 
 import {Router} from '@angular/router';
 import {ContractService} from '../contract.service';
+import {Facility} from '../../model/facility';
+import {Customer} from '../../model/customer';
+import {CustomerService} from '../../customer-manager/customer.service';
+import {FacilityService} from '../../facility-manager/facility.service';
 
 @Component({
   selector: 'app-contract-create',
@@ -12,11 +16,14 @@ import {ContractService} from '../contract.service';
 })
 export class ContractCreateComponent implements OnInit {
   contractForm: FormGroup;
-  contract: Contract[] = [];
+  // contract: Contract[] = [];
+  facilities: Facility[] = [];
+  customers: Customer[] = [];
 
-  constructor(private route: Router, private contractService: ContractService) {
+  constructor(private route: Router, private contractService: ContractService,
+              private customerService: CustomerService, private facilityService: FacilityService) {
     this.contractForm = new FormGroup({
-      contractId: new FormControl('', [Validators.required]),
+      id: new FormControl('', [Validators.required]),
       customerName: new FormControl('', [Validators.required]),
       serviceName: new FormControl('', [Validators.required]),
       startDay: new FormControl('', [Validators.required]),
@@ -27,12 +34,35 @@ export class ContractCreateComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getAllCustomer();
+    this.getAllFacility();
   }
 
   createContract() {
     const contract = this.contractForm.value;
-    this.contractService.saveContract(contract);
-    this.contractForm.reset();
-    this.route.navigate(['/contract/list']);
+    console.log(this.contractForm.value);
+    // this.customerService.saveCustomer(customer);
+    // this.customerForm.reset();
+
+    this.contractService.saveContract(contract).subscribe(() => {
+      }, error => {
+
+      },
+      () => {
+        this.route.navigateByUrl('/contract/list');
+      });
+    // this.route.navigate(['/customer/list']);
+  }
+
+  getAllCustomer() {
+    this.customerService.getAll().subscribe(customers => {
+      this.customers = customers;
+    });
+  }
+
+  getAllFacility() {
+    this.facilityService.getAll().subscribe(facilities => {
+      this.facilities = facilities;
+    });
   }
 }

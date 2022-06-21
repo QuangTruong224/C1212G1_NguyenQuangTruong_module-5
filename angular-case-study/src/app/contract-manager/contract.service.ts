@@ -1,55 +1,33 @@
 import {Injectable} from '@angular/core';
 import {Customer} from '../model/customer';
 import {Contract} from '../model/contract';
+import {CustomerService} from '../customer-manager/customer.service';
+import {FacilityService} from '../facility-manager/facility.service';
+import {HttpClient} from '@angular/common/http';
+import {environment} from '../../environments/environment';
+import {Observable} from 'rxjs';
+
+const API_URL = `${environment.apiUrl}`;
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContractService {
-  contracts: Contract[] = [
-    {
-      contractId: 'HD-001', contractName: 'Nguyễn Quang Trường', serviceName: 'Phòng suite hướng biển', startDay: '2022-03-14',
-      endDay: '2022-04-22', deposit: '5000000', total: '10000000'
-    },
 
-    {
-      contractId: 'HD-002', contractName: 'Nguyễn Thị Hào', serviceName: 'Phòng superior hướng hồ', startDay: '2022-04-14',
-      endDay: '2022-04-22', deposit: '3000000', total: '17000000'
-    },
-    {
-      contractId: 'HD-003', contractName: 'Trần Tâm Đắc', serviceName: 'Phòng Deluxe hướng biển', startDay: '2022-06-24',
-      endDay: '2022-07-22', deposit: '7000000', total: '14000000'
-    }
-  ];
+  contracts: Contract[] = [];
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
-  getAll() {
-    return this.contracts;
+  getAll(): Observable<Contract[]> {
+    return this.http.get<Contract[]>(API_URL + '/contracts');
   }
 
-  saveContract(contract) {
-    this.contracts.push(contract);
+  saveContract(contract): Observable<Contract> {
+    return this.http.post<Contract>(API_URL + '/contracts', contract);
   }
 
-  findById(contractId: string) {
-    return this.contracts.find(contract => contract.contractId === contractId);
-  }
-
-  updateContract(contractId: string, contract: Contract) {
-    for (let i = 0; i < this.contracts.length; i++) {
-      if (this.contracts[i].contractId === contractId) {
-        this.contracts[i] = contract;
-      }
-    }
-  }
-
-  deleteContract(contractId: string) {
-    for (let i = 0; i < this.contracts.length; i++) {
-      if (this.contracts[i].contractId === contractId) {
-        this.contracts.splice(i, 1);
-      }
-    }
+  deleteContract(id: string): Observable<Contract> {
+    return this.http.delete<Contract>(`${API_URL}/contracts/${id}`);
   }
 }

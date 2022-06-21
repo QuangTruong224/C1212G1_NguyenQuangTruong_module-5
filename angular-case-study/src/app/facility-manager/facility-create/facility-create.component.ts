@@ -17,8 +17,8 @@ export class FacilityCreateComponent implements OnInit {
 
   constructor(private route: Router, private facilityService: FacilityService) {
     this.facilityForm = new FormGroup({
-      facilityId: new FormControl('', [Validators.required]),
-      facilityName: new FormControl('', [Validators.required, Validators.pattern('[A-Za-z]{4,50}')]),
+      id: new FormControl('', [Validators.required]),
+      facilityName: new FormControl('', [Validators.required]),
       area: new FormControl('', [Validators.required]),
       cost: new FormControl('', [Validators.required]),
       maxPeople: new FormControl('', [Validators.required]),
@@ -36,22 +36,31 @@ export class FacilityCreateComponent implements OnInit {
 
   createFacility() {
     const facility = this.facilityForm.value;
-    this.facilityService.saveFacility(facility);
-    this.facilityForm.reset();
-    this.route.navigate(['/facility/list']);
+    console.log(this.facilityForm.value);
+    // this.customerService.saveCustomer(customer);
+    // this.customerForm.reset();
+
+    this.facilityService.saveFacility(facility).subscribe(() => {
+      }, error => {
+
+      },
+      () => {
+        this.route.navigateByUrl('/facility/list');
+      });
+    // this.route.navigate(['/customer/list']);
   }
 
 
-  // onSelectFile(event) { // called each time file input changes
-  //   if (event.target.files && event.target.files[0]) {
-  //     const reader = new FileReader();
-  //
-  //     reader.readAsDataURL(event.target.files[0]); // read file as data url
-  //
-  //     // tslint:disable-next-line:no-shadowed-variable
-  //     reader.onload = (event) => { // called once readAsDataURL is completed
-  //       this.url = event.target.result;
-  //     };
-  //   }
-  // }
+// onSelectFile(event) { // called each time file input changes
+//   if (event.target.files && event.target.files[0]) {
+//     const reader = new FileReader();
+//
+//     reader.readAsDataURL(event.target.files[0]); // read file as data url
+//
+//     // tslint:disable-next-line:no-shadowed-variable
+//     reader.onload = (event) => { // called once readAsDataURL is completed
+//       this.url = event.target.result;
+//     };
+//   }
+// }
 }
